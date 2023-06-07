@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .style {
+            background-color: red;
+        }
+    </style>
+    <title>html에 대하여(~ 2-2)</title>
+    <h1>가장 상위제목. 시맨틱 마크업. 스크립트로 이벤트 만들기</h1>
+    <script>
+        const h1 = document.querySelector("h1");
+        h1.addEventListener("click", () => {
+            alert("const 상수 선언\nh1과 연결\ndocument.querySelector로 일치하는 것 연결\nh1.addEventListener(\"click\", () => {});으로 클릭이벤트사용");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="style">스타일은 head태그안에 쓴다.</div>
+</body>
+
+</html>
